@@ -14,6 +14,7 @@ def get_gender_users(data:dict) -> list:
         list: users get gender list
     """
     ls = []
+    
     for i in data['results']:
         if i['gender'] == 'male':
             ls.append('{"Male":1}')
